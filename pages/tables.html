@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <title>Instance Admin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="aside" class="aside">
+            <a href="/index.html" class="aside__logo">
+                Instance Admin
+            </a>
+            <a href="/index.html" class="aside__link">
+                Clients
+            </a>
+        </aside>
+        <main class="main">
+            <div class="toper">
+                <div class="toper__titles">
+                    <div class="burger" id="burger">
+                        <span></span>
+                    </div>
+                    <h2 class="toper__title">Client's tables</h2>
+                </div>
+                <div class="toper__btns">
+                    <a href="./client.html">Edit</a>
+                    <a href="./employees.html">Employees</a>
+                    <a href="./tables.html">Tables</a>
+                </div>
+            </div>
+            <div class="employees">
+                <a class="employees__btn--add" href="./add.html">Add</a>
+                <table class="main__table">
+                    <tbody>
+                        <tr class="main__table--row">
+                            <th class="main__table--text">ID</th>
+                            <th class="main__table--text">tableName</th>
+                            <th class="main__table--text">tableCount</th>
+                            <th class="main__table--text employees__last">tableColumns</th>
+                        </tr>
+                        <tr class="main__table--row">
+                            <td class="main__table--text">1</td>
+                            <td class="main__table--text">Test</td>
+                            <td class="main__table--text">5</td>
+                            <td class="main__table--text employees__last">12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>

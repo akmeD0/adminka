@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <title>Instance Admin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="aside" class="aside">
+            <a href="/index.html" class="aside__logo">
+                Instance Admin
+            </a>
+            <a href="/index.html" class="aside__link">
+                Clients
+            </a>
+        </aside>
+        <main class="main">
+            <div class="toper">
+                <div class="toper__titles">
+                    <div class="burger" id="burger">
+                        <span></span>
+                    </div>
+                    <h2 class="toper__title">Create Table</h2>
+                </div>
+                <div class="toper__btns">
+                    <a href="./client.html">Edit</a>
+                    <a href="./employees.html">Employees</a>
+                    <a href="./tables.html">Tables</a>
+                </div>
+            </div>
+            <div class="nav">
+                <input type="text" placeholder="Enter table name" class="nav__name" />
+                <div class="nav__btns">
+                    <a href="./add.html" class="nav__btn active">Coloumns</a>
+                    <a href="./add/relation.html" class="nav__btn">Relation</a>
+                </div>
+            </div>
+            <table class="main__table">
+                <tbody>
+                    <tr class="main__table--row">
+                        <th class="main__table--text">ID</th>
+                        <th class="main__table--text">Name</th>
+                        <th class="main__table--text">Slug</th>
+                        <th class="main__table--text table__add--type">Type</th>
+                        <th class="main__table--text table__add--last"></th>
+                    </tr>
+                    <tr class="main__table--row">
+                        <td class="main__table--text">1</td>
+                        <td class="main__table--text">Test</td>
+                        <td class="main__table--text">Test</td>
+                        <td class="main__table--text table__add--type">INT</td>
+                        <td class="main__table--text table__add--last">
+                            <button class="table__btn--delete">
+                                <img src="/src/img/delete.svg" alt="delete button">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table__add">
+                <div class="table__add--box">
+                    <label class="table__add--inp" for="Name">
+                        <p>Name</p>
+                        <input type="text" id="Name" placeholder="Enter Column"/>
+                    </label>
+                    <label class="table__add--inp" for="Slug">
+                        <p>Slug</p>
+                        <input type="text" id="Slug" placeholder="Enter Slug"/>
+                    </label>
+                    <div class="table__add--inp">
+                        <p>Type</p>
+                        <select>
+                            <option>INT</option>
+                            <option>Boolean</option>
+                            <option>String</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table__add--btns">
+                    <button class="table__add--btn">Add</button>
+                    <button class="table__add--btn">Save</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>

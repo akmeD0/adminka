@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/styles/styles.css">
+    <title>Instance Admin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="aside" class="aside">
+            <a href="/index.html" class="aside__logo">
+                Instance Admin
+            </a>
+            <a href="/index.html" class="aside__link">
+                Clients
+            </a>
+        </aside>
+        <main class="main">
+            <div class="toper">
+                <div class="toper__titles">
+                    <div class="burger" id="burger">
+                        <span></span>
+                    </div>
+                    <h2 class="toper__title">Edit Client</h2>
+                    <p class="toper__table">Table Name</p>
+                </div>
+                <div class="toper__btns">
+                    <a href="./client.html">Edit</a>
+                    <a href="./employees.html">Employees</a>
+                    <a href="./tables.html">Tables</a>
+                </div>
+            </div>
+            <div class="edit">
+                <label for="isActive" class="edit__active">
+                    <input type="checkbox" id="isActive" name="isActive">
+                    <span class="edit__active--span"></span>
+                    active
+                </label>
+                <div class="edit__inputs">
+                    <input type="text" class="edit__inp" placeholder="Type smth...">
+                    <input type="text" class="edit__inp" placeholder="Type smth...">
+                </div>
+                <button class="edit__btn">Save</button>
+            </div>
+        </main>
+    </div>
+    <script src="../src/js/script.js"></script>
+</body>
+
+</html>
